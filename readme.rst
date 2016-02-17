@@ -35,3 +35,9 @@ Brainstorm
 
 
 .. _cym13/bookmark: https://github.com/cym13/bookmark
+
+
+Disclaimer
+----------
+
+Links in example ``left.md`` and ``right.md`` are highly personal.
