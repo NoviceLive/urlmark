@@ -2,9 +2,9 @@ UrlMark
 =======
 
 
-Click [here] if you are eager to see the code.
+Click here_ if you are eager to see the code.
 
-[here]: (https://github.com/NoviceLive/urlmark/blob/gh-pages/urlmark/main.py#L21)
+.. _here: https://github.com/NoviceLive/urlmark/blob/gh-pages/urlmark/main.py#L21
 
 
 Write yourself a home page with bookmarks well-organized,
