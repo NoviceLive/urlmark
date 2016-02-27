@@ -1,2 +1,2 @@
 default:
-	./urlmark.py
+	./urlmark.py -o gh-pages/index.html
