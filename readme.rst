@@ -20,10 +20,10 @@ Recommended Way
 
 - ``git clone https://github.com/NoviceLive/urlmark.git``
 
-  __Tips__
+  **Tips**
 
   (Recommended) Add ``--recursive`` to obtain example Markdown files,
-  as well as __templates__.
+  as well as **templates**.
 
   Add ``--deth 1`` to prevent cloning unnecessary histories.
 
@@ -39,7 +39,7 @@ Alternatives
 
 - ``pip install urlmark``
 
-  No example Markdown files and no __templates__,
+  No example Markdown files and no **templates**,
   which are required if you don't want to write your own.
 
 
