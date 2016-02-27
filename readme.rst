@@ -6,13 +6,8 @@ Write yourself a home page with bookmarks well-organized,
 browser-agnostic and easy-to-share.
 
 
-Click here_ if you are eager to see the code.
-
-.. _here: https://github.com/NoviceLive/urlmark/blob/gh-pages/urlmark/main.py#L21
-
-
-Demo Site
----------
+Demo
+----
 
 `Online Bookmarks <http://novicelive.github.io/urlmark/>`_
 
