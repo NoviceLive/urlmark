@@ -15,11 +15,32 @@ Demo
 Installation
 ------------
 
-``pip install urlmark``
+Recommended Way
++++++++++++++++
 
-Alternatively, you can simply clone and run without installation,
-as long as dependencies have been installed
-(e.g. ``pip install -r requirements.txt``).
+- ``git clone https://github.com/NoviceLive/urlmark.git``
+
+  __Tips__
+
+  (Recommended) Add ``--recursive`` to obtain example Markdown files,
+  as well as __templates__.
+
+  Add ``--deth 1`` to prevent cloning unnecessary histories.
+
+- ``cd urlmark``
+
+- ``pip install -r requirements.txt``
+
+- ``make install`` (Optional)
+
+
+Alternatives
+++++++++++++
+
+- ``pip install urlmark``
+
+  No example Markdown files and no __templates__,
+  which are required if you don't want to write your own.
 
 
 Get Started
