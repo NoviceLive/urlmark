@@ -28,7 +28,7 @@ from bs4 import BeautifulSoup
 @click.command()
 @click.argument('left', default='left.md', type=click.File('r'))
 @click.argument('right', default='right.md', type=click.File('r'))
-@click.argument('template', default='template.html',
+@click.option('-t', '--template', default='template.html',
                 type=click.File('r'))
 @click.option('-o', '--output', default='index.html',
               type=click.File('w'))
