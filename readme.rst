@@ -20,9 +20,7 @@ Recommended Way
 
 - ``git clone https://github.com/NoviceLive/urlmark.git``
 
-  **Tips**
-
-  (Recommended) Add ``--recursive`` to obtain example Markdown files,
+  Add ``--recursive`` to obtain example Markdown files,
   as well as **templates**.
 
   Add ``--deth 1`` to prevent cloning unnecessary histories.
