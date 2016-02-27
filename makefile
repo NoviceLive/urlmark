@@ -1,0 +1,2 @@
+default:
+	./urlmark.py
