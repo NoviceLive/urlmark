@@ -6,12 +6,6 @@ Write yourself a home page with bookmarks well-organized,
 browser-agnostic and easy-to-share.
 
 
-Demo
-----
-
-`Online Bookmarks <http://novicelive.github.io/urlmark/>`_
-
-
 Installation
 ------------
 
@@ -24,6 +18,8 @@ Recommended Way
   as well as **templates**.
 
   Add ``--deth 1`` to prevent cloning unnecessary histories.
+  However, this may of no help since UrlMark uses its ``gh-pages``
+  as a submodule which will result in full clone.
 
 - ``cd urlmark``
 
@@ -64,7 +60,8 @@ Get Started
 - Write a template.
 
   You can use the included template in ``gh-pages`` branch,
-  but it may not look eyeful.
+  but it may not look eyeful. Here is the demo:
+  `Online Bookmarks <http://novicelive.github.io/urlmark/>`_.
 
   It shall has three placeholders:
   ``{left}``, ``{right}``, ``{time}``.

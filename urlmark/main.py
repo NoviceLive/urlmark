@@ -24,8 +24,13 @@ import click
 from markdown import markdown
 from bs4 import BeautifulSoup
 
+from . import __version__, PROGRAM_NAME
 
-@click.command()
+
+@click.command(
+    context_settings=dict(help_option_names=['-h', '--help']))
+@click.version_option(__version__,
+                      '-V', '--version', prog_name=PROGRAM_NAME)
 @click.option('-l', '--left', default='left.md',
               show_default=True, type=click.File('r'),
               help='Use this as the left side.')

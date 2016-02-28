@@ -1,0 +1,4 @@
+exclude .gitignore
+exclude .gitmodules
+include gh-pages/*.md
+include gh-pages/template.html

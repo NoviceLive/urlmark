@@ -19,7 +19,7 @@ along with UrlMark.  If not, see <http://www.gnu.org/licenses/>.
 
 
 __author__ = 'Gu Zhengxiong'
-__version__ = '0.3.0'
+__version__ = '0.4.0'
 
 
 PROGRAM_NAME = 'UrlMark'
