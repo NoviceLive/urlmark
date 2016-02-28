@@ -44,7 +44,19 @@ Alternatives
 Get Started
 -----------
 
-Check ``./urlmark.py --help`` and examine this repository.
+::
+
+   ./urlmark.py --help
+   Usage: urlmark.py [OPTIONS]
+
+     Write you self a home page with well-organized booksmarks.
+
+   Options:
+     -l, --left FILENAME      Use this as the left side.  [default: left.md]
+     -r, --right FILENAME     Use this as the right side.  [default: right.md]
+     -t, --template FILENAME  Use this template.  [default: template.html]
+     -o, --output FILENAME    Write to this file.  [default: index.html]
+     --help                   Show this message and exit.
 
 
 Brainstorm & TODO

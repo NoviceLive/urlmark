@@ -26,37 +26,44 @@ from bs4 import BeautifulSoup
 
 
 @click.command()
-@click.argument('left', default='left.md', type=click.File('r'))
-@click.argument('right', default='right.md', type=click.File('r'))
+@click.option('-l', '--left', default='left.md',
+              show_default=True, type=click.File('r'),
+              help='Use this as the left side.')
+@click.option('-r', '--right', default='right.md',
+              show_default=True, type=click.File('r'),
+              help='Use this as the right side.')
 @click.option('-t', '--template', default='template.html',
-                type=click.File('r'))
+              show_default=True, type=click.File('r'),
+              help='Use this template.')
 @click.option('-o', '--output', default='index.html',
-              type=click.File('w'))
+              show_default=True, type=click.File('w'),
+              help='Write to this file.')
 def main(left, right, template, output):
+    """Write you self a home page with well-organized booksmarks."""
     output.write(apply_template(template, left, right))
 
 
 def apply_template(template, left, right):
+    """Apply template to the left and right side HTML."""
     return template.read().format(
         process_file(left), process_file(right), time.asctime())
 
 
 def process_file(one):
+    """Render Markdown to HTML and update it for use in Foundation."""
     return update_html(markdown(one.read()))
 
 
 def update_html(doc):
+    """Update HTML for Foundation to render it as drop-down menu."""
     soup = BeautifulSoup(doc, 'html.parser')
     soup.find('ul').unwrap()
-
     for tag in soup('ul'):
         tag['class'] = 'submenu menu vertical'
-
     for tag in soup('a'):
         if tag.attrs['href'] == '#':
             tag['class'] = 'has-submenu'
             tag['data-submenu'] = ''
         else:
             tag['target'] = '_blank'
-
     return soup
