@@ -46,7 +46,8 @@ def main(left, right, template, output):
 def apply_template(template, left, right):
     """Apply template to the left and right side HTML."""
     return template.read().format(
-        process_file(left), process_file(right), time.asctime())
+        left=process_file(left), right=process_file(right),
+        time=time.asctime())
 
 
 def process_file(one):

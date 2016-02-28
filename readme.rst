@@ -44,19 +44,54 @@ Alternatives
 Get Started
 -----------
 
-::
 
-   ./urlmark.py --help
-   Usage: urlmark.py [OPTIONS]
+- Write the left and right side links in Markdown lists.
 
-     Write you self a home page with well-organized booksmarks.
+  It looks like this and in ``gh-pages`` of this repository,
+  there are examples of ``left.md`` and ``right.md``.
 
-   Options:
-     -l, --left FILENAME      Use this as the left side.  [default: left.md]
-     -r, --right FILENAME     Use this as the right side.  [default: right.md]
-     -t, --template FILENAME  Use this template.  [default: template.html]
-     -o, --output FILENAME    Write to this file.  [default: index.html]
-     --help                   Show this message and exit.
+  ::
+
+     - [FOSS](#)
+         - [Repositories](#)
+             - [GitHub](https://github.com/)
+             - [Bitbucket](https://bitbucket.org/)
+             - [GitLab](https://about.gitlab.com/)
+             - [SourceForge](http://sourceforge.net/)
+             - [CodePlex](https://www.codeplex.com/)
+             - [GitCafe](https://gitcafe.com/)
+
+- Write a template.
+
+  You can use the included template in ``gh-pages`` branch,
+  but it may not look eyeful.
+
+  It shall has three placeholders:
+  ``{left}``, ``{right}``, ``{time}``.
+
+  And all other uses of brackets must be escaped
+  as in Python ``str.format``.
+
+- Run ``./urlmark.py`` with necessary options.
+
+  If you name your left and right side
+  as ``left.md`` and ``right.md``, your template as ``template``,
+  you can just run ``./urlmark.py`` with no options
+  on their residing directory.
+
+  ::
+
+     ./urlmark.py --help
+     Usage: urlmark.py [OPTIONS]
+
+       Write you self a home page with well-organized bookmarks.
+
+     Options:
+       -l, --left FILENAME      Use this as the left side.  [default: left.md]
+       -r, --right FILENAME     Use this as the right side.  [default: right.md]
+       -t, --template FILENAME  Use this template.  [default: template.html]
+       -o, --output FILENAME    Write to this file.  [default: index.html]
+       --help                   Show this message and exit.
 
 
 Brainstorm & TODO
@@ -77,4 +112,6 @@ Brainstorm & TODO
 Disclaimer
 ----------
 
-Bookmarks in example ``left.md`` and ``right.md`` are highly personal.
+Bookmarks in example ``left.md`` and ``right.md``
+are highly personal, and may have no other implications except
+personal convenience for the time being.
