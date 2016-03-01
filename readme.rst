@@ -6,6 +6,20 @@ Write yourself a home page with bookmarks well-organized,
 browser-agnostic and easy-to-share.
 
 
+Demo based-on `awesome-python`_
+-------------------------------
+
+http://novicelive.github.io/urlmark/awepy/
+
+- Credits
+
+  Links are from `awesome-python`_.
+
+- Notice
+
+  I made execessive manual editing and rearrangement.
+
+
 Installation
 ------------
 
@@ -63,7 +77,8 @@ Get Started
   but it may not look eyeful. Here is the demo:
   `Online Bookmarks <http://novicelive.github.io/urlmark/>`_.
 
-  It shall has three placeholders:
+  See the included template (in ``gh-pages``) to write your own one,
+  It shall setup Foundation_ scaffold and has three placeholders:
   ``{left}``, ``{right}``, ``{time}``.
 
   And all other uses of brackets must be escaped
@@ -94,11 +109,9 @@ Get Started
 Brainstorm & TODO
 -----------------
 
-- How about integrating command line interface like `cym13/bookmark`_?
+- How about integrating CLI like `cym13/bookmark`_?
 
 - Mobile view (i.e. responsive or not)?
-
-- Does it look good?
 
 - Write some fantastic themes (a.k.a templates)?
 
@@ -112,3 +125,7 @@ Disclaimer
 Bookmarks in example ``left.md`` and ``right.md``
 are highly personal, and may have no other implications except
 personal convenience for the time being.
+
+
+.. _awesome-python: https://github.com/vinta/awesome-python
+.. _Foundation: http://foundation.zurb.com/
