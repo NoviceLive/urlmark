@@ -6,11 +6,13 @@ Write yourself a home page with bookmarks well-organized,
 browser-agnostic and easy-to-share.
 
 
-Demo based-on `awesome-python`_
+Demo_ based-on `awesome-python`_
 -------------------------------
 
-A concise awesome list using UrlMark_:
+A concise awesome list using UrlMark:
 http://novicelive.github.io/urlmark/awepy/.
+
+.. _Demo: http://novicelive.github.io/urlmark/awepy/
 
 - Credits
 
@@ -140,4 +142,3 @@ personal convenience for the time being.
 
 .. _awesome-python: https://github.com/vinta/awesome-python
 .. _Foundation: http://foundation.zurb.com/
-.. _UrlMark: https://github.com/NoviceLive/urlmark
