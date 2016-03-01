@@ -34,7 +34,8 @@ Recommended Way
   as well as **templates**.
 
   Add ``--deth 1`` to prevent cloning unnecessary histories.
-  However, this may of no help since UrlMark uses its ``gh-pages``
+  However, this might be of no help
+  since UrlMark uses its ``gh-pages``
   as a submodule which will result in full clone.
 
 - ``cd urlmark``
