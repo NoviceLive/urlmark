@@ -9,7 +9,8 @@ browser-agnostic and easy-to-share.
 Demo based-on `awesome-python`_
 -------------------------------
 
-http://novicelive.github.io/urlmark/awepy/
+A concise awesome list using UrlMark_:
+http://novicelive.github.io/urlmark/awepy/.
 
 - Credits
 
@@ -18,6 +19,7 @@ http://novicelive.github.io/urlmark/awepy/
 - Notice
 
   I made execessive manual editing and rearrangement.
+  Therefore, it may contain errors, but it's merely a demo.
 
 
 Installation
@@ -50,6 +52,14 @@ Alternatives
   No example Markdown files and no **templates**,
   which are required if you don't want to write your own.
 
+- Download from Github releases_.
+
+.. _releases: https://github.com/NoviceLive/urlmark/releases.
+
+- Download from PyPI_.
+
+.. _PyPI: https://github.com/NoviceLive/urlmark/releases.
+
 
 Get Started
 -----------
@@ -74,10 +84,10 @@ Get Started
 - Write a template.
 
   You can use the included template in ``gh-pages`` branch,
-  but it may not look eyeful. Here is the demo:
+  but it may not look eyeful. Here is the another demo:
   `Online Bookmarks <http://novicelive.github.io/urlmark/>`_.
 
-  See the included template (in ``gh-pages``) to write your own one,
+  See the included template (in ``gh-pages``) to write your own one.
   It shall setup Foundation_ scaffold and has three placeholders:
   ``{left}``, ``{right}``, ``{time}``.
 
@@ -129,3 +139,4 @@ personal convenience for the time being.
 
 .. _awesome-python: https://github.com/vinta/awesome-python
 .. _Foundation: http://foundation.zurb.com/
+.. _UrlMark: https://github.com/NoviceLive/urlmark
