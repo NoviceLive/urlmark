@@ -100,7 +100,7 @@ Get Started
 - Run ``./urlmark.py`` with necessary options.
 
   If you name your left and right side
-  as ``left.md`` and ``right.md``, your template as ``template``,
+  as ``left.md`` and ``right.md``, your template as ``template.html``,
   you can just run ``./urlmark.py`` with no options
   on their residing directory.
 
@@ -129,9 +129,6 @@ Brainstorm & TODO
 - Write some fantastic themes (a.k.a templates)?
 
 
-.. _cym13/bookmark: https://github.com/cym13/bookmark
-
-
 Disclaimer
 ----------
 
@@ -142,3 +139,4 @@ personal convenience for the time being.
 
 .. _awesome-python: https://github.com/vinta/awesome-python
 .. _Foundation: http://foundation.zurb.com/
+.. _cym13/bookmark: https://github.com/cym13/bookmark
