@@ -8,8 +8,18 @@ Write yourself a home page with bookmarks well-organized,
 browser-agnostic and easy-to-share.
 
 
+Demos
+-----
+
+Shared browser bookmarks
+++++++++++++++++++++++++
+
+See http://librecrops.github.io/bookmarks/.
+
+Source lies here, https://github.com/LibreCrops/bookmarks.
+
 Demo_ based-on `awesome-python`_
--------------------------------
+++++++++++++++++++++++++++++++++
 
 A concise awesome list using UrlMark:
 http://novicelive.github.io/urlmark/awepy/.
@@ -89,8 +99,7 @@ Get Started
 - Write a template.
 
   You can use the included template in ``gh-pages`` branch,
-  but it may not look eyeful. Here is the another demo:
-  `Online Bookmarks <http://novicelive.github.io/urlmark/>`_.
+  but it may not look eyeful.
 
   See the included template (in ``gh-pages``) to write your own one.
   It shall setup Foundation_ scaffold and has three placeholders:
