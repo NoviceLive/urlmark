@@ -1,6 +1,8 @@
 UrlMark
 =======
 
+.. image:: https://img.shields.io/pypi/v/urlmark.svg
+   :target: https://pypi.python.org/pypi/UrlMark
 
 Write yourself a home page with bookmarks well-organized,
 browser-agnostic and easy-to-share.
