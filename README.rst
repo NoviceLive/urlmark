@@ -14,9 +14,9 @@ Demos
 Shared browser bookmarks
 ++++++++++++++++++++++++
 
-See http://librecrops.github.io/bookmarks/.
+See http://librecrops.github.io/shared-bookmarks/.
 
-Source lies here, https://github.com/LibreCrops/bookmarks.
+Source lies here, https://github.com/LibreCrops/shared-bookmarks.
 
 Demo_ based-on `awesome-python`_
 ++++++++++++++++++++++++++++++++
