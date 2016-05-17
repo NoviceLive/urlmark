@@ -18,18 +18,19 @@ along with UrlMark.  If not, see <http://www.gnu.org/licenses/>.
 """
 
 
-import time
+from time import asctime
 
+from pkg_resources import resource_filename
 import click
 from markdown import markdown
 from bs4 import BeautifulSoup
 
-from . import __version__, PROGRAM_NAME
+from . import VERSION_PROMPT, PROGRAM_NAME
 
 
 @click.command(
     context_settings=dict(help_option_names=['-h', '--help']))
-@click.version_option(__version__,
+@click.version_option(VERSION_PROMPT,
                       '-V', '--version', prog_name=PROGRAM_NAME)
 @click.option('-l', '--left', default='left.md',
               show_default=True, type=click.File('r'),
@@ -37,7 +38,8 @@ from . import __version__, PROGRAM_NAME
 @click.option('-r', '--right', default='right.md',
               show_default=True, type=click.File('r'),
               help='Use this as the right side.')
-@click.option('-t', '--template', default='template.html',
+@click.option('-t', '--template',
+              default=resource_filename(__name__, 'template.html'),
               show_default=True, type=click.File('r'),
               help='Use this template.')
 @click.option('-o', '--output', default='index.html',
@@ -52,7 +54,7 @@ def apply_template(template, left, right):
     """Apply template to the left and right side HTML."""
     return template.read().format(
         left=process_file(left), right=process_file(right),
-        time=time.asctime())
+        time=asctime())
 
 
 def process_file(one):

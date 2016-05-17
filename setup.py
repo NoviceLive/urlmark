@@ -18,17 +18,32 @@ along with UrlMark.  If not, see <http://www.gnu.org/licenses/>.
 """
 
 
+from sys import argv
+from os.path import join, dirname
+
 from setuptools import setup
 
-from urlmark import (
-    PROGRAM_NAME, PACKAGE_NAME, __version__, __author__
-)
+
+PROGRAM_NAME = 'UrlMark'
+PACKAGE_NAME = PROGRAM_NAME.lower()
+
+__author__ = 'Gu Zhengxiong'
+
+my_dir = dirname(argv[0])
+version_file = 'version.txt'
+version_path = join(my_dir, PACKAGE_NAME, version_file)
+with open(version_path) as stream:
+    __version__ = stream.read().strip()
+
+with open(join(my_dir, 'requirements.txt')) as stream:
+    requirements = stream.read().splitlines()
 
 
 setup(
     name=PROGRAM_NAME,
     version=__version__,
     packages=[PACKAGE_NAME],
+    package_data={'urlmark': ['template.html', version_file]},
     install_requires=['click', 'markdown', 'beautifulsoup4'],
     entry_points={
         'console_scripts': [

@@ -39,33 +39,9 @@ http://novicelive.github.io/urlmark/awepy/.
 Installation
 ------------
 
-Recommended Way
-+++++++++++++++
-
-- ``git clone https://github.com/NoviceLive/urlmark.git``
-
-  Add ``--recursive`` to obtain example Markdown files,
-  as well as **templates**.
-
-  Add ``--deth 1`` to prevent cloning unnecessary histories.
-  However, this might be of no help
-  since UrlMark uses its ``gh-pages``
-  as a submodule which will result in full clone.
-
-- ``cd urlmark``
-
-- ``pip install -r requirements.txt``
-
-- ``make install`` (Optional)
-
-
-Alternatives
-++++++++++++
-
 - ``pip install urlmark``
 
-  No example Markdown files and no **templates**,
-  which are required if you don't want to write your own.
+  This comes with no example Markdown files.
 
 - Download from Github releases_.
 
@@ -78,7 +54,6 @@ Alternatives
 
 Get Started
 -----------
-
 
 - Write the left and right side links in Markdown lists.
 
@@ -98,10 +73,9 @@ Get Started
 
 - Write a template.
 
-  You can use the included template in ``gh-pages`` branch,
-  but it may not look eyeful.
+  You can use the included template, but it may not look eyeful.
 
-  See the included template (in ``gh-pages``) to write your own one.
+  See the bundled template to write your own one.
   It shall setup Foundation_ scaffold and has three placeholders:
   ``{left}``, ``{right}``, ``{time}``.
 
@@ -111,9 +85,9 @@ Get Started
 - Run ``./urlmark.py`` with necessary options.
 
   If you name your left and right side
-  as ``left.md`` and ``right.md``, your template as ``template.html``,
+  as ``left.md`` and ``right.md``,
   you can just run ``./urlmark.py`` with no options
-  on their residing directory.
+  on the residing directory.
 
   ::
 
@@ -133,7 +107,7 @@ Get Started
 Brainstorm & TODO
 -----------------
 
-- How about integrating CLI like `cym13/bookmark`_?
+- Integrate with `Intentional command-not-found handler`_.
 
 - Mobile view (i.e. responsive or not)?
 
@@ -150,4 +124,4 @@ personal convenience for the time being.
 
 .. _awesome-python: https://github.com/vinta/awesome-python
 .. _Foundation: http://foundation.zurb.com/
-.. _cym13/bookmark: https://github.com/cym13/bookmark
+.. _Intentional command-not-found handler: https://github.com/NoviceLive/unish#features
