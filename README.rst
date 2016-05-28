@@ -107,8 +107,6 @@ Get Started
 Brainstorm & TODO
 -----------------
 
-- Integrate with `Intentional command-not-found handler`_.
-
 - Mobile view (i.e. responsive or not)?
 
 - Write some fantastic themes (a.k.a templates)?

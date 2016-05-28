@@ -43,11 +43,15 @@ setup(
     name=PROGRAM_NAME,
     version=__version__,
     packages=[PACKAGE_NAME],
-    package_data={'urlmark': ['template.html', version_file]},
+    package_data={
+        'urlmark': ['template.html', version_file, 'aliases.db']
+    },
     install_requires=['click', 'markdown', 'beautifulsoup4'],
     entry_points={
         'console_scripts': [
-            'urlmark={}.main:main'.format(PACKAGE_NAME)
+            'urlmark={}.main:main'.format(PACKAGE_NAME),
+            'found={}.found:main'.format(PACKAGE_NAME),
+            'foundb={}.database:main'.format(PACKAGE_NAME)
         ]
     },
 
