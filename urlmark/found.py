@@ -91,6 +91,20 @@ def handle_operator(operator, args):
     return 0
 
 
+# TODO: POST.
+# TODO: Escape.
+# TODO: Find a better way.
+
+
+def handle_kern(args):
+    return 'https://www.kernel.org/doc/htmldocs/kernel-api/'\
+        'API-{}.html'.format(args)
+
+
+def handle_aur(args):
+    return 'https://aur.archlinux.org/packages/?O=0&K=' + args
+
+
 def handle_lxr(args):
     return 'http://lxr.free-electrons.com/ident?i=' + args
 
