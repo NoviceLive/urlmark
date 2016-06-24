@@ -45,15 +45,13 @@ Installation
 
 - ``pip install urlmark``
 
-  This comes with no example Markdown files.
-
 - Download from Github releases_.
 
-.. _releases: https://github.com/NoviceLive/urlmark/releases.
+.. _releases: https://github.com/NoviceLive/urlmark/releases
 
 - Download from PyPI_.
 
-.. _PyPI: https://github.com/NoviceLive/urlmark/releases.
+.. _PyPI: https://pypi.python.org/pypi/UrlMark
 
 
 Get Started
