@@ -39,6 +39,10 @@ http://novicelive.github.io/urlmark/awepy/.
 Installation
 ------------
 
+- ``pip install git+https://github.com/NoviceLive/urlmark.git``
+
+  Lastest Git version.
+
 - ``pip install urlmark``
 
   This comes with no example Markdown files.
