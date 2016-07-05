@@ -106,6 +106,95 @@ Get Started
        --help                   Show this message and exit.
 
 
+Command Line Launcher & Intentional Command-Not-Found
+-----------------------------------------------------
+
+UrlMark is intended to be commandline-friendly,
+which is achieved using **intentional** command-not-found handler
+together with our extended interpretation of Markdown_.
+
+Warning
++++++++
+
+This feature is experimental and work in progress,
+and probably contains hardcoded behaviors,
+which will be removed gradually.
+
+Consider it as an **demonstration** of some idea from the author.
+
+Shell Setup
++++++++++++
+
+- Install UrlMark by any means aforementioned.
+- Use the following pieces of code as your command-not-found handler.
+
+  ::
+
+     found "${@}" || return 127
+
+  Specifically, for Zsh_, add the following to you shell profile.
+
+  ::
+
+     command_not_found_handler() {
+         found "${@}" || return 127
+     }
+
+  For Bash_ users, the following.
+
+  ::
+
+     command_not_found_handle() {
+         found "${@}" || return 127
+     }
+
+Basic Show Cases
+++++++++++++++++
+
+::
+
+   $ # Search in Google or Bing, and many others.
+   $ @google Who is the president of US
+   $ @bing Who is the president of US
+
+   $ # Open a website.
+   $ @github
+
+   $ # Search in dictionaries.
+   $ @oxford pulchritude
+   $ @urban '<3'
+
+Extended Interpretation
++++++++++++++++++++++++
+
+Simply, UrlMark will interpret HTML comments as short names of
+links.
+
+What follows is an example of this.
+
+::
+
+   - [FOSS](#)
+       - [Repository Hosting](#)
+           - [GitHub](https://github.com/) <!-- gb -->
+           - [Bitbucket](https://bitbucket.org/) <!-- bt -->
+           - [GitLab](https://gitlab.com/)
+           - [SourceForge](https://sourceforge.net/) <!-- sf -->
+           - [CodePlex](https://www.codeplex.com/)
+
+Suppose that the above content resides in a file named ``left.md``,
+you can then prepare the dataset used by UrlMark using,
+``foundb left.md``,
+(UrlMark is intended to automatically handle
+data preparation by itself in later updates.),
+after which you can then type ``@gb`` on you terminal to
+launch your browser to the website of Github.
+
+To be described in detail later.
+But you are always free and **encouraged** to go ahead
+and read the source code.
+
+
 Brainstorm & TODO
 -----------------
 
@@ -124,4 +213,4 @@ personal convenience for the time being.
 
 .. _awesome-python: https://github.com/vinta/awesome-python
 .. _Foundation: http://foundation.zurb.com/
-.. _Intentional command-not-found handler: https://github.com/NoviceLive/unish#features
+.. _Markdown: http://daringfireball.net/projects/markdown/
