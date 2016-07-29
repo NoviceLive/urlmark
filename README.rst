@@ -125,7 +125,7 @@ Consider it as an **demonstration** of some idea from the author.
 Shell Setup
 +++++++++++
 
-- Install UrlMark by any means aforementioned.
+- Install the Git version of UrlMark.
 - Use the following pieces of code as your command-not-found handler.
 
   ::
