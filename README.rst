@@ -188,7 +188,9 @@ you can then prepare the dataset used by UrlMark using,
 (UrlMark is intended to automatically handle
 data preparation by itself in later updates.),
 after which you can then type ``@gb`` on you terminal to
-launch your browser to the website of Github.
+launch your browser,
+which is hardcoded as ``firefox`` for the time being,
+to the website of Github.
 
 To be described in detail later.
 But you are always free and **encouraged** to go ahead
@@ -198,9 +200,16 @@ and read the source code.
 Brainstorm & TODO
 -----------------
 
-- Mobile view (i.e. responsive or not)?
+- Bugs
 
-- Write some fantastic themes (a.k.a templates)?
+  - Remove the hardcoded ``firefox`` and use a launcher corresponding to the running system.
+
+    E.g. ``xdg-open`` on GNU/Linux, ``open`` on MacOS.
+
+- Features
+
+  - Mobile view (i.e. responsive or not)?
+  - Write some fantastic themes (a.k.a templates)?
 
 
 Disclaimer
@@ -214,3 +223,5 @@ personal convenience for the time being.
 .. _awesome-python: https://github.com/vinta/awesome-python
 .. _Foundation: http://foundation.zurb.com/
 .. _Markdown: http://daringfireball.net/projects/markdown/
+.. _Bash: https://www.gnu.org/software/bash/
+.. _Zsh: http://www.zsh.org/
