@@ -120,7 +120,7 @@ This feature is experimental and work in progress,
 and probably contains hardcoded behaviors,
 which will be removed gradually.
 
-Consider it as an **demonstration** of some idea from the author.
+Consider it as a **demonstration** of some idea from the author.
 
 Shell Setup
 +++++++++++
