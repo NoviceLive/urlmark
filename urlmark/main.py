@@ -59,7 +59,7 @@ from . import VERSION_PROMPT, PROGRAM_NAME
               type=click.File('w', encoding='utf-8'),
               help='Write to this file.')
 def main(left, right, template, output):
-    """Write you self a home page with well-organized booksmarks."""
+    """Write yourself a home page with well-organized booksmarks."""
     output.write(apply_template(template, left, right))
 
 
