@@ -76,15 +76,18 @@ def process_file(one):
 
 
 def update_html(doc):
-    """Update HTML for Foundation to render it as drop-down menu."""
+    """Update the HTML for Foundation to render it as drop-down menus."""
     soup = BeautifulSoup(doc, 'html.parser')
     soup.find('ul').unwrap()
-    for tag in soup('ul'):
+    for tag in soup.select('ul'):
         tag['class'] = 'submenu menu vertical'
-    for tag in soup('a'):
-        if tag.attrs['href'] == '#':
+    for tag in soup.select('a'):
+        if tag.attrs['href'].startswith('#'):
             tag['class'] = 'has-submenu'
             tag['data-submenu'] = ''
+            if tag.attrs['href'] != '#':
+                tag.attrs['href'] = tag.attrs['href'].lstrip('#')
+                tag['target'] = '_blank'
         else:
             tag['target'] = '_blank'
     return soup
