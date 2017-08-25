@@ -22,9 +22,9 @@ Demo_ based-on `awesome-python`_
 ++++++++++++++++++++++++++++++++
 
 A concise awesome list using UrlMark:
-http://novicelive.github.io/urlmark/awepy/.
+https://librecrops.github.io/shared-bookmarks/urlmark/awepy/.
 
-.. _Demo: http://novicelive.github.io/urlmark/awepy/
+.. _Demo: https://librecrops.github.io/shared-bookmarks/urlmark/awepy/
 
 - Credits
 
@@ -59,8 +59,7 @@ Get Started
 
 - Write the left and right side links in Markdown lists.
 
-  It looks like this and in ``gh-pages`` of this repository,
-  there are examples of ``left.md`` and ``right.md``.
+  It looks like what follows.
 
   ::
 
@@ -69,9 +68,6 @@ Get Started
              - [GitHub](https://github.com/)
              - [Bitbucket](https://bitbucket.org/)
              - [GitLab](https://about.gitlab.com/)
-             - [SourceForge](http://sourceforge.net/)
-             - [CodePlex](https://www.codeplex.com/)
-             - [GitCafe](https://gitcafe.com/)
 
 - Write a template.
 
@@ -176,18 +172,16 @@ What follows is an example of this.
 
    - [FOSS](#)
        - [Repository Hosting](#)
-           - [GitHub](https://github.com/) <!-- gb -->
+           - [GitHub](https://github.com/) <!-- gh -->
            - [Bitbucket](https://bitbucket.org/) <!-- bt -->
            - [GitLab](https://gitlab.com/)
-           - [SourceForge](https://sourceforge.net/) <!-- sf -->
-           - [CodePlex](https://www.codeplex.com/)
 
 Suppose that the above content resides in a file named ``left.md``,
 you can then prepare the dataset used by UrlMark using,
 ``foundb left.md``,
 (UrlMark is intended to automatically handle
 data preparation by itself in later updates.),
-after which you can then type ``@gb`` on you terminal to
+after which you can then type ``@gh`` on you terminal to
 launch your browser,
 which is hardcoded as ``firefox`` for the time being,
 to the website of Github.
@@ -205,19 +199,6 @@ Brainstorm & TODO
   - Remove the hardcoded ``firefox`` and use a launcher corresponding to the running system.
 
     E.g. ``xdg-open`` on GNU/Linux, ``open`` on MacOS.
-
-- Features
-
-  - Mobile view (i.e. responsive or not)?
-  - Write some fantastic themes (a.k.a templates)?
-
-
-Disclaimer
-----------
-
-Bookmarks in example ``left.md`` and ``right.md``
-are highly personal, and may have no other implications except
-personal convenience for the time being.
 
 
 .. _awesome-python: https://github.com/vinta/awesome-python
